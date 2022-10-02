@@ -1,0 +1,102 @@
+[debug] [2022-10-02T17:09:35.746Z] ----------------------------------------------------------------------
+[debug] [2022-10-02T17:09:35.747Z] Command:       /usr/local/bin/node /Users/addyogunmonasotayo/.npm-global/bin/firebase deploy --only functions
+[debug] [2022-10-02T17:09:35.748Z] CLI Version:   11.13.0
+[debug] [2022-10-02T17:09:35.748Z] Platform:      darwin
+[debug] [2022-10-02T17:09:35.748Z] Node Version:  v16.16.0
+[debug] [2022-10-02T17:09:35.756Z] Time:          Sun Oct 02 2022 13:09:35 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-10-02T17:09:35.756Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-02T17:09:35.815Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-02T17:09:35.815Z] > authorizing via signed-in user (addysotayo@gmail.com)
+[debug] [2022-10-02T17:09:35.816Z] [iam] checking project hungry-7d670 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2022-10-02T17:09:35.817Z] > refreshing access token with scopes: []
+[debug] [2022-10-02T17:09:35.819Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-02T17:09:35.819Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:09:36.013Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-10-02T17:09:36.014Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:09:36.014Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hungry-7d670:testIamPermissions [none]
+[debug] [2022-10-02T17:09:36.014Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hungry-7d670:testIamPermissions x-goog-quota-user=projects/hungry-7d670
+[debug] [2022-10-02T17:09:36.014Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hungry-7d670:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2022-10-02T17:09:36.211Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hungry-7d670:testIamPermissions 401
+[debug] [2022-10-02T17:09:36.211Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hungry-7d670:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2022-10-02T17:09:36.212Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-10-02T17:09:36.212Z] > refreshing access token with scopes: []
+[debug] [2022-10-02T17:09:36.213Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-02T17:09:36.213Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:09:36.300Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-10-02T17:09:36.300Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:09:36.300Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/hungry-7d670/serviceAccounts/hungry-7d670@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-10-02T17:09:36.300Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/hungry-7d670/serviceAccounts/hungry-7d670@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-10-02T17:09:36.411Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/hungry-7d670/serviceAccounts/hungry-7d670@appspot.gserviceaccount.com:testIamPermissions 401
+[debug] [2022-10-02T17:09:36.411Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/hungry-7d670/serviceAccounts/hungry-7d670@appspot.gserviceaccount.com:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"iam.googleapis.com","method":"google.iam.admin.v1.IAM.TestIamPermissions"}}]}}
+[debug] [2022-10-02T17:09:36.411Z] [functions] service account IAM check errored, deploy may fail:HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"service":"iam.googleapis.com","method":"google.iam.admin.v1.IAM.TestIamPermissions"}}]}},"response":{"statusCode":401}},"exit":1,"message":"HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":401}
+[info] 
+[info] === Deploying to 'hungry-7d670'...
+[info] 
+[info] i  deploying functions 
+[debug] [2022-10-02T17:09:36.414Z] > refreshing access token with scopes: []
+[debug] [2022-10-02T17:09:36.415Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-02T17:09:36.415Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:09:36.521Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-10-02T17:09:36.530Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:09:36.530Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hungry-7d670 [none]
+[debug] [2022-10-02T17:09:36.705Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hungry-7d670 401
+[debug] [2022-10-02T17:09:36.705Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hungry-7d670 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-10-02T17:09:36.705Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-10-02T17:09:36.711Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/Users/addyogunmonasotayo/.npm-global/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/addyogunmonasotayo/.npm-global/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project hungry-7d670. Please make sure the project exists and your account has permission to access it.
+[debug] [2022-10-02T17:23:48.994Z] ----------------------------------------------------------------------
+[debug] [2022-10-02T17:23:48.996Z] Command:       /usr/local/bin/node /Users/addyogunmonasotayo/.npm-global/bin/firebase deploy --only functions
+[debug] [2022-10-02T17:23:48.997Z] CLI Version:   11.13.0
+[debug] [2022-10-02T17:23:48.997Z] Platform:      darwin
+[debug] [2022-10-02T17:23:48.997Z] Node Version:  v16.16.0
+[debug] [2022-10-02T17:23:48.998Z] Time:          Sun Oct 02 2022 13:23:48 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-10-02T17:23:48.998Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-02T17:23:49.060Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-02T17:23:49.060Z] > authorizing via signed-in user (addysotayo@gmail.com)
+[debug] [2022-10-02T17:23:49.061Z] [iam] checking project hungry-7d670 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2022-10-02T17:23:49.062Z] > refreshing access token with scopes: []
+[debug] [2022-10-02T17:23:49.063Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-02T17:23:49.063Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:23:49.267Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-10-02T17:23:49.267Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:23:49.268Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hungry-7d670:testIamPermissions [none]
+[debug] [2022-10-02T17:23:49.268Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hungry-7d670:testIamPermissions x-goog-quota-user=projects/hungry-7d670
+[debug] [2022-10-02T17:23:49.268Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hungry-7d670:testIamPermissions {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
+[debug] [2022-10-02T17:23:49.469Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hungry-7d670:testIamPermissions 401
+[debug] [2022-10-02T17:23:49.470Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hungry-7d670:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2022-10-02T17:23:49.470Z] [iam] error while checking permissions, command may fail: FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-10-02T17:23:49.470Z] > refreshing access token with scopes: []
+[debug] [2022-10-02T17:23:49.471Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-02T17:23:49.471Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:23:49.579Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-10-02T17:23:49.579Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:23:49.579Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/hungry-7d670/serviceAccounts/hungry-7d670@appspot.gserviceaccount.com:testIamPermissions [none]
+[debug] [2022-10-02T17:23:49.579Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/hungry-7d670/serviceAccounts/hungry-7d670@appspot.gserviceaccount.com:testIamPermissions {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-10-02T17:23:49.689Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/hungry-7d670/serviceAccounts/hungry-7d670@appspot.gserviceaccount.com:testIamPermissions 401
+[debug] [2022-10-02T17:23:49.689Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/hungry-7d670/serviceAccounts/hungry-7d670@appspot.gserviceaccount.com:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.iam.admin.v1.IAM.TestIamPermissions","service":"iam.googleapis.com"}}]}}
+[debug] [2022-10-02T17:23:49.690Z] [functions] service account IAM check errored, deploy may fail:HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project. {"name":"FirebaseError","children":[],"context":{"body":{"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.iam.admin.v1.IAM.TestIamPermissions","service":"iam.googleapis.com"}}]}},"response":{"statusCode":401}},"exit":1,"message":"HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":401}
+[info] 
+[info] === Deploying to 'hungry-7d670'...
+[info] 
+[info] i  deploying functions 
+[debug] [2022-10-02T17:23:49.694Z] > refreshing access token with scopes: []
+[debug] [2022-10-02T17:23:49.694Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2022-10-02T17:23:49.694Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:23:49.813Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2022-10-02T17:23:49.813Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2022-10-02T17:23:49.814Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hungry-7d670 [none]
+[debug] [2022-10-02T17:23:50.015Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hungry-7d670 401
+[debug] [2022-10-02T17:23:50.015Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hungry-7d670 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2022-10-02T17:23:50.015Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2022-10-02T17:23:50.016Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (/Users/addyogunmonasotayo/.npm-global/lib/node_modules/firebase-tools/lib/responseToError.js:49:12)
+    at RetryOperation._fn (/Users/addyogunmonasotayo/.npm-global/lib/node_modules/firebase-tools/lib/apiv2.js:288:77)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: Failed to get Firebase project hungry-7d670. Please make sure the project exists and your account has permission to access it.
