@@ -4,10 +4,10 @@
     "slug": "Hungry",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/iconsoup.png",
+    "icon": "./assets/food-delivery.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/food.jpg",
+      "image": "./assets/burger.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -20,7 +20,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/iconsoup.png",
+        "foregroundImage": "./assets/burger.png",
         "backgroundColor": "#FFFFFF"
       }
     }
