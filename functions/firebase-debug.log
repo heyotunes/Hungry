@@ -1,0 +1,207 @@
+[debug] [2022-10-04T04:01:58.303Z] ----------------------------------------------------------------------
+[debug] [2022-10-04T04:01:58.304Z] Command:       /usr/local/bin/node /Users/addyogunmonasotayo/.npm-global/bin/firebase emulators:start --only functions
+[debug] [2022-10-04T04:01:58.305Z] CLI Version:   11.13.0
+[debug] [2022-10-04T04:01:58.305Z] Platform:      darwin
+[debug] [2022-10-04T04:01:58.305Z] Node Version:  v16.16.0
+[debug] [2022-10-04T04:01:58.315Z] Time:          Tue Oct 04 2022 00:01:58 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-10-04T04:01:58.315Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-10-04T04:01:58.385Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-10-04T04:01:58.386Z] > authorizing via signed-in user (addysotayo@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-10-04T04:01:58.616Z] [hub] writing locator at /var/folders/77/mzzq2t9d6s565_v1x7jxfft00000gn/T/hub-hungry-7d670.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage, eventarc {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage, eventarc\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-10-04T04:01:58.639Z] defaultcredentials: writing to file /Users/addyogunmonasotayo/.config/firebase/addysotayo_gmail_com_application_default_credentials.json
+[debug] [2022-10-04T04:01:58.642Z] Setting GAC to /Users/addyogunmonasotayo/.config/firebase/addysotayo_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/addyogunmonasotayo/.config/firebase/addysotayo_gmail_com_application_default_credentials.json"}}
+[debug] [2022-10-04T04:01:58.646Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hungry-7d670/adminSdkConfig [none]
+[debug] [2022-10-04T04:02:00.065Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hungry-7d670/adminSdkConfig 200
+[debug] [2022-10-04T04:02:00.065Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hungry-7d670/adminSdkConfig {"projectId":"hungry-7d670","storageBucket":"hungry-7d670.appspot.com"}
+[debug] [2022-10-04T04:02:00.190Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-10-04T04:02:00.190Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-10-04T04:02:00.191Z] Starting Emulator UI with command {"binary":"node","args":["/Users/addyogunmonasotayo/.cache/firebase/emulators/ui-v1.9.0/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/addyogunmonasotayo/.cache/firebase/emulators/ui-v1.9.0/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-10-04T04:02:00.485Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/Users/addyogunmonasotayo/Documents/Hungry/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/addyogunmonasotayo/Documents/Hungry/functions\" for Cloud Functions..."}}
+[debug] [2022-10-04T04:02:00.740Z] Validating nodejs source
+[debug] [2022-10-04T04:02:05.026Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.16",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-10-04T04:02:05.026Z] Building nodejs source
+[debug] [2022-10-04T04:02:05.026Z] Analyzing nodejs backend spec
+[debug] [2022-10-04T04:02:05.029Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-10-04T04:02:05.448Z] Serving at port 9005
+
+[debug] [2022-10-04T04:02:05.736Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"},"placesNearby":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"placesNearby"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-10-04T04:02:05.768Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions: Loaded functions definitions from source: geocode, placesNearby. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: geocode, placesNearby."}}
+[info] ✔  functions[us-central1-geocode]: http function initialized (http://localhost:5001/hungry-7d670/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/hungry-7d670/us-central1/geocode)."}}
+[info] ✔  functions[us-central1-placesNearby]: http function initialized (http://localhost:5001/hungry-7d670/us-central1/placesNearby). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/hungry-7d670/us-central1/placesNearby)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-10-04T04:02:21.778Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-04T04:02:21.779Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-04T04:02:21.779Z] Accepted request GET /hungry-7d670/us-central1/geocode?city=san%20francisco --> us-central1-geocode
+[debug] [2022-10-04T04:02:21.780Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-04T04:02:21.781Z] [functions] Got req.url=/hungry-7d670/us-central1/geocode?city=san%20francisco, mapping to path=/?city=san%20francisco {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/hungry-7d670/us-central1/geocode?city=san%20francisco, mapping to path=/?city=san%20francisco"}}
+[debug] [2022-10-04T04:02:21.798Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-10-04T04:02:21.799Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-10-04T04:02:23.807Z] [runtime-status] [9169] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:23.808Z] [runtime-status] [9169] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:23.809Z] [runtime-status] [9169] Found local functions config: /Users/addyogunmonasotayo/Documents/Hungry/functions/.runtimeconfig.json {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] Found local functions config: /Users/addyogunmonasotayo/Documents/Hungry/functions/.runtimeconfig.json"}}
+[debug] [2022-10-04T04:02:23.809Z] [runtime-status] [9169] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-04T04:02:23.810Z] [runtime-status] [9169] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:23.868Z] [runtime-status] [9169] Checked functions.config() {"config":{"google":{"key":"AIzaSyB6MTBGzak4bNUKDKUMDMalnTpUgBGsoXQ"}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] Checked functions.config() {\"config\":{\"google\":{\"key\":\"AIzaSyB6MTBGzak4bNUKDKUMDMalnTpUgBGsoXQ\"}}}"}}
+[debug] [2022-10-04T04:02:23.869Z] [runtime-status] [9169] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-04T04:02:23.869Z] [runtime-status] [9169] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:23.869Z] [runtime-status] [9169] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:23.869Z] [runtime-status] [9169] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:23.869Z] [runtime-status] [9169] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-04T04:02:23.959Z] [runtime-status] [9169] Functions runtime initialized. {"cwd":"/Users/addyogunmonasotayo/Documents/Hungry/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] Functions runtime initialized. {\"cwd\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-10-04T04:02:23.960Z] [runtime-status] [9169] Listening to port: /var/folders/77/mzzq2t9d6s565_v1x7jxfft00000gn/T/fire_emu_a92c5bece44bc984.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [9169] Listening to port: /var/folders/77/mzzq2t9d6s565_v1x7jxfft00000gn/T/fire_emu_a92c5bece44bc984.sock"}}
+[debug] [2022-10-04T04:02:23.980Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-04T04:02:23.980Z] [worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-04T04:02:24.514Z] [worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: IDLE"}}
+[debug] [2022-10-04T04:02:24.514Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 526.741129ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 526.741129ms"}}
+[debug] [2022-10-04T04:02:24.581Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-04T04:02:24.581Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-04T04:02:24.581Z] Accepted request GET /hungry-7d670/us-central1/placesNearby?location=37.7749295,-122.4194155 --> us-central1-placesNearby
+[debug] [2022-10-04T04:02:24.581Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-04T04:02:24.582Z] [functions] Got req.url=/hungry-7d670/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/hungry-7d670/us-central1/placesNearby?location=37.7749295,-122.4194155, mapping to path=/?location=37.7749295,-122.4194155"}}
+[debug] [2022-10-04T04:02:24.600Z] [worker-pool] addWorker(us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-placesNearby)"}}
+[debug] [2022-10-04T04:02:24.600Z] [worker-pool] Adding worker with key us-central1-placesNearby, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-placesNearby, total=1"}}
+[debug] [2022-10-04T04:02:26.100Z] [runtime-status] [9180] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:26.104Z] [runtime-status] [9180] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:26.104Z] [runtime-status] [9180] Found local functions config: /Users/addyogunmonasotayo/Documents/Hungry/functions/.runtimeconfig.json {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] Found local functions config: /Users/addyogunmonasotayo/Documents/Hungry/functions/.runtimeconfig.json"}}
+[debug] [2022-10-04T04:02:26.105Z] [runtime-status] [9180] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-10-04T04:02:26.106Z] [runtime-status] [9180] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:26.154Z] [runtime-status] [9180] Checked functions.config() {"config":{"google":{"key":"AIzaSyB6MTBGzak4bNUKDKUMDMalnTpUgBGsoXQ"}}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] Checked functions.config() {\"config\":{\"google\":{\"key\":\"AIzaSyB6MTBGzak4bNUKDKUMDMalnTpUgBGsoXQ\"}}}"}}
+[debug] [2022-10-04T04:02:26.154Z] [runtime-status] [9180] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-10-04T04:02:26.156Z] [runtime-status] [9180] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:26.157Z] [runtime-status] [9180] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:26.158Z] [runtime-status] [9180] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.1","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.1\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-10-04T04:02:26.158Z] [runtime-status] [9180] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-10-04T04:02:26.334Z] [runtime-status] [9180] Functions runtime initialized. {"cwd":"/Users/addyogunmonasotayo/Documents/Hungry/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] Functions runtime initialized. {\"cwd\":\"/Users/addyogunmonasotayo/Documents/Hungry/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-10-04T04:02:26.334Z] [runtime-status] [9180] Listening to port: /var/folders/77/mzzq2t9d6s565_v1x7jxfft00000gn/T/fire_emu_44b4ff90c75e1e22.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"[runtime-status] [9180] Listening to port: /var/folders/77/mzzq2t9d6s565_v1x7jxfft00000gn/T/fire_emu_44b4ff90c75e1e22.sock"}}
+[debug] [2022-10-04T04:02:26.369Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-04T04:02:26.369Z] [worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-04T04:02:28.338Z] [worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: IDLE"}}
+[debug] [2022-10-04T04:02:28.339Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 1957.01507ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 1957.01507ms"}}
+[debug] [2022-10-04T04:06:03.228Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-04T04:06:03.228Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-04T04:06:03.228Z] Accepted request GET /hungry-7d670/us-central1/geocode?city=toronto --> us-central1-geocode
+[debug] [2022-10-04T04:06:03.230Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-04T04:06:03.230Z] [functions] Got req.url=/hungry-7d670/us-central1/geocode?city=toronto, mapping to path=/?city=toronto {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/hungry-7d670/us-central1/geocode?city=toronto, mapping to path=/?city=toronto"}}
+[debug] [2022-10-04T04:06:03.230Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-04T04:06:03.230Z] [worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-04T04:06:03.491Z] [worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: IDLE"}}
+[debug] [2022-10-04T04:06:03.491Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 257.147284ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 257.147284ms"}}
+[debug] [2022-10-04T04:06:03.712Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-04T04:06:03.717Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-04T04:06:03.718Z] Accepted request GET /hungry-7d670/us-central1/placesNearby?location=43.653226,-79.3831843 --> us-central1-placesNearby
+[debug] [2022-10-04T04:06:03.718Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-04T04:06:03.722Z] [functions] Got req.url=/hungry-7d670/us-central1/placesNearby?location=43.653226,-79.3831843, mapping to path=/?location=43.653226,-79.3831843 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/hungry-7d670/us-central1/placesNearby?location=43.653226,-79.3831843, mapping to path=/?location=43.653226,-79.3831843"}}
+[debug] [2022-10-04T04:06:03.726Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-04T04:06:03.726Z] [worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-04T04:06:04.642Z] [worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: IDLE"}}
+[debug] [2022-10-04T04:06:04.642Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 896.471732ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 896.471732ms"}}
+[debug] [2022-10-04T04:06:16.809Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-04T04:06:16.810Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-04T04:06:16.810Z] Accepted request GET /hungry-7d670/us-central1/geocode?city=new%20jersey --> us-central1-geocode
+[debug] [2022-10-04T04:06:16.810Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-04T04:06:16.810Z] [functions] Got req.url=/hungry-7d670/us-central1/geocode?city=new%20jersey, mapping to path=/?city=new%20jersey {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/hungry-7d670/us-central1/geocode?city=new%20jersey, mapping to path=/?city=new%20jersey"}}
+[debug] [2022-10-04T04:06:16.810Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-04T04:06:16.810Z] [worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-04T04:06:17.496Z] [worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: IDLE"}}
+[debug] [2022-10-04T04:06:17.496Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 683.295044ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 683.295044ms"}}
+[debug] [2022-10-04T04:06:17.689Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-04T04:06:17.689Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-04T04:06:17.689Z] Accepted request GET /hungry-7d670/us-central1/placesNearby?location=40.0583238,-74.4056612 --> us-central1-placesNearby
+[debug] [2022-10-04T04:06:17.689Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-04T04:06:17.690Z] [functions] Got req.url=/hungry-7d670/us-central1/placesNearby?location=40.0583238,-74.4056612, mapping to path=/?location=40.0583238,-74.4056612 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/hungry-7d670/us-central1/placesNearby?location=40.0583238,-74.4056612, mapping to path=/?location=40.0583238,-74.4056612"}}
+[debug] [2022-10-04T04:06:17.690Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-04T04:06:17.690Z] [worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-04T04:06:17.956Z] [worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: IDLE"}}
+[debug] [2022-10-04T04:06:17.956Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 262.59337ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 262.59337ms"}}
+[debug] [2022-10-04T04:06:35.708Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-04T04:06:35.708Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-04T04:06:35.708Z] Accepted request GET /hungry-7d670/us-central1/geocode?city=london --> us-central1-geocode
+[debug] [2022-10-04T04:06:35.709Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-04T04:06:35.709Z] [functions] Got req.url=/hungry-7d670/us-central1/geocode?city=london, mapping to path=/?city=london {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/hungry-7d670/us-central1/geocode?city=london, mapping to path=/?city=london"}}
+[debug] [2022-10-04T04:06:35.709Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-04T04:06:35.709Z] [worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-04T04:06:36.025Z] [worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: IDLE"}}
+[debug] [2022-10-04T04:06:36.025Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 314.410107ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 314.410107ms"}}
+[debug] [2022-10-04T04:06:36.057Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-04T04:06:36.057Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-04T04:06:36.058Z] Accepted request GET /hungry-7d670/us-central1/placesNearby?location=51.5072178,-0.1275862 --> us-central1-placesNearby
+[debug] [2022-10-04T04:06:36.058Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-04T04:06:36.058Z] [functions] Got req.url=/hungry-7d670/us-central1/placesNearby?location=51.5072178,-0.1275862, mapping to path=/?location=51.5072178,-0.1275862 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/hungry-7d670/us-central1/placesNearby?location=51.5072178,-0.1275862, mapping to path=/?location=51.5072178,-0.1275862"}}
+[debug] [2022-10-04T04:06:36.058Z] [worker-pool] submitRequest(triggerId=us-central1-placesNearby) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-placesNearby)"}}
+[debug] [2022-10-04T04:06:36.058Z] [worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: BUSY"}}
+[info] i  functions: Beginning execution of "placesNearby" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Beginning execution of \"placesNearby\""}}
+[debug] [2022-10-04T04:06:36.475Z] [worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-placesNearby-91d7f6a5-beb2-4e8f-ab59-fd865a03882d]: IDLE"}}
+[debug] [2022-10-04T04:06:36.477Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "placesNearby" in 417.328948ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-placesNearby"},"extension":{},"message":"Finished \"placesNearby\" in 417.328948ms"}}
+[debug] [2022-10-04T04:06:46.450Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-10-04T04:06:46.450Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-10-04T04:06:46.450Z] Accepted request GET /hungry-7d670/us-central1/geocode?city=itygbnb --> us-central1-geocode
+[debug] [2022-10-04T04:06:46.451Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-10-04T04:06:46.451Z] [functions] Got req.url=/hungry-7d670/us-central1/geocode?city=itygbnb, mapping to path=/?city=itygbnb {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/hungry-7d670/us-central1/geocode?city=itygbnb, mapping to path=/?city=itygbnb"}}
+[debug] [2022-10-04T04:06:46.451Z] [worker-pool] submitRequest(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-geocode)"}}
+[debug] [2022-10-04T04:06:46.451Z] [worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: BUSY"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-10-04T04:06:47.002Z] [worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-55d4f258-9104-4450-9b0b-56c75de80169]: IDLE"}}
+[debug] [2022-10-04T04:06:47.003Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[info] i  functions: Finished "geocode" in 549.74384ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in 549.74384ms"}}
