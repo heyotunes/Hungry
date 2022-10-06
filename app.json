@@ -7,8 +7,8 @@
     "icon": "./assets/food-delivery.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/burger.png",
-      "resizeMode": "contain",
+      "image": "./assets/goodeat.png",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -20,7 +20,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/burger.png",
+        "foregroundImage": "./assets/goodeat.png",
         "backgroundColor": "#FFFFFF"
       }
     }
